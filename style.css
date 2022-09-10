@@ -1,0 +1,19 @@
+html {
+    background-color: rgb(0, 53, 105);
+}
+
+#dealers-hand {
+    background-color:forestgreen;
+    position: fixed;
+    bottom: 0;
+}
+
+#dealers-hand.hidden {
+    display: none;
+}
+#rules {
+    display: block;
+    color: #2AA3A0;
+    font-family: 'Helvetica';
+    
+}
