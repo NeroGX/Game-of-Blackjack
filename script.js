@@ -112,7 +112,7 @@ hitMeButton.addEventListener('click', () => {
             alert('Player busted. House takes the win.');
             busted = true;
             points -=50;
-            dealerHandEl.classList.remove('hidden');
+            dealerHandEl.classList.remove('hidden')
         }
         if (playerScore === 21) {
             alert('Blackjack motherfucker! I won! Taking my money and going to Vegas!');
@@ -139,12 +139,13 @@ stayButton.addEventListener('click', async () => {
                 busted = true;
                 points += 50;
             }
-            if (dealerScore === 21) {
-                alert('Blackjack motherfucker! House wins! You lose! Good day, sir!');
-            }
+          
     }
     if (!busted) {
-        if (dealerScore === playerScore) {
+        if (dealerScore === 21) {
+            alert('Blackjack motherfucker! House wins! You lose! Good day, sir!');
+        }
+        else if (dealerScore === playerScore) {
             alert('You broke even!');
         }
         else if (dealerScore < playerScore) {
